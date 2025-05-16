@@ -63,11 +63,11 @@ public class HolaMundoRestController {
 		return ResponseEntity.ok(s);
 	}
 
-	@GetMapping("propiedades")
-	public ResponseEntity<String> propiedades() {
-		String s = service.getValor();
-		return ResponseEntity.ok(s);
-	}
+//	@GetMapping("propiedades")
+//	public ResponseEntity<String> propiedades() {
+//		String s = service.getValor();
+//		return ResponseEntity.ok(s);
+//	}
 
 	@GetMapping("componentes")
 	public ResponseEntity<Integer> componentes() {
