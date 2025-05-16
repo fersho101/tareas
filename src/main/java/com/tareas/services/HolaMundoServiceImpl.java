@@ -24,5 +24,10 @@ public class HolaMundoServiceImpl implements HolaMundoService {
 		}
 		return contador;
 	}
+	
+	public String getValor() {
+		List<Persona> personas = repository.getPersonas();
+		return personas.get(0).getNombre();
+	}
 
 }
